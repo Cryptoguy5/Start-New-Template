@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start New Template</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: aqua;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 90%;
+            width: 90%;
+            background-color: white;
+            box-shadow: 0 0 10px 0;
+        }
+
+        .top {
+            height: 15%;
+            width: 100%;
+            background-color: rgb(225, 216, 216);
+            box-shadow: 0px 2px 3px 0px ;
+            margin-bottom: 5px;
+        }
+
+        .bottom {
+            height: 84%;
+            width: 100%;
+        }
+
+        .left {
+            height: 100%;
+            width: 33%;
+            text-align: center;
+        }
+
+        .right {
+            height: 100%;
+            width: 67%;
+            text-align: center;
+        }
+
+        .section {
+            height: 100%;
+            width: 50%
+        }
+
+        .section2 {
+            height: 15%;
+            width: 70%;
+            padding: 0;
+            margin-bottom: 2%;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        svg {
+            height: 10%;
+            width: 20%;
+        }
+
+        .svg2 {
+            height: 90%;
+            width: 10%;
+        }
+
+        .svg3 {
+            height: 30%;
+            width: 10%;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        .box-border {
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 25%;
+            margin-right: 3%;
+            font-size: 18px;
+            padding: 1%;
+            color: #050ba8;
+            box-shadow: 0 0 5px 0;
+            border-radius: 5px
+        }
+
+        .button2 {
+            width: 35%;
+            height: 50%;
+            background-color: #050ba8;
+            color: white;
+        }
+
+        form {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: rgb(225, 216, 216);
+            box-shadow: 0 0 5px 0;
+            margin-top: 2%;
+            
+        }
+
+        input {
+            width: 70%;
+            padding: 1%;
+            border-radius: 5px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        label {
+            margin-top: 2%;
+        }
+
+        span {
+            color: red;
+        }
+
+        .arrows {
+            background-image: url(./up-and-down-small-triangular-arrows-svgrepo-com.svg);
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position: right;   
+        }
+
+        .upload {
+            height: 25%;
+            width: 90%;
+            border: 2px dotted black;
+            margin-left: 5%;
+            margin-top: 1%;
+            background-color: rgb(225, 216, 216);
+        }
+
+        @media(max-width: 680px) {
+             
+            body {
+                height: 100%;
+            }
+
+            h1, h2 {
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 10px;
+                margin-top: 10%;
+            }
+
+
+            .bottom {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .left {
+                padding-left: 0;
+                width: 90%;
+            }
+
+            .section.top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body class="center">
+    <div class="main">
+       <div class="top flex">
+         <div class="section flex box-border" style="padding-top: 1%;">
+            <svg class="svg2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 493.474 493.474" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:#050ba8;" d="M314.284,314.029c-30.563,23.814-55.479,53.227-80.686,82.352 c-10.786-11.428-20.596-23.559-26.917-38.184c-7.154-16.676-34.342,7.584-27.895,22.598c8.817,20.387,24.519,36.965,39.977,52.584 c6.305,6.416,17.138-0.832,21.491-5.793c27.652-31.398,53.448-64.443,86.638-90.305 C342.816,324.894,333.261,299.242,314.284,314.029z"></path> <path style="fill:#050ba8;" d="M402.266,35.399h-76.354c-5.358-5.895-13.04-9.679-21.632-9.679h-29.412v-4.984 C274.867,9.946,260.415,0,246.738,0c-13.678,0-28.13,9.946-28.13,20.736v4.984h-29.413c-8.592,0-16.273,3.784-21.632,9.679H91.176 c-8.099,0-14.594,6.554-14.594,14.619v428.829c0,8.049,6.479,14.627,14.594,14.627h311.091c8.081,0,14.626-6.527,14.626-14.627 V50.018C416.891,41.953,410.346,35.399,402.266,35.399z M387.607,464.238H105.787V64.636h42.285v0.003h13.47 c3.971,11.538,14.772,19.892,27.668,19.892h57.528h57.528c12.896,0,23.697-8.354,27.668-19.892h13.47v-0.003h42.204 L387.607,464.238L387.607,464.238z"></path> <rect x="133.1" y="114.818" style="fill:#050ba8;" width="227.273" height="22.729"></rect> <rect x="133.1" y="164.818" style="fill:#050ba8;" width="227.273" height="22.729"></rect> <rect x="133.1" y="214.818" style="fill:#050ba8;" width="227.273" height="22.729"></rect> <rect x="133.1" y="264.818" style="fill:#050ba8;" width="227.273" height="22.729"></rect> </g> </g> </g></svg>
+            <div class="section box-border">
+                <h1>Start New Template</h1>
+                <h2 style="font-weight: normal;">Version 1</h2>
+            </div>
+           </div>
+         <div class="section center" style="justify-content: flex-end;">
+            <button class="center">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="#160599" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <p style="margin: 0;">Back to List</p>
+            </button>
+            <button class="button2">
+                <p style="margin: 0;">Save Template Details</p>
+            </button>
+         </div>
+       </div>
+       <div class="bottom flex">
+           <div class="left" style="padding-left: 5%;">
+             <h2 style="font-size: 36px; font-weight: normal;">Template Settings</h2>
+             <form>
+                <label><span>*</span> Name</label>
+                <input type="text" placeholder="Sales Quote Template">
+                <label><span>*</span> Template Type</label>
+                <input type="text" placeholder="Microsoft Word">
+                <label><span>*</span> Token Mapping</label>
+                <input class="arrows" type="text" placeholder="JSON">
+                <label><span>*</span> Token Mapping Method</label>
+                <div class="section2 center" style= "align-items: flex-start;">
+                    <input type="radio" checked style="margin-top: 3%; margin-left: 15%;">
+                    <label>OmniDataTransform</label>
+                    <input type="radio" checked style="margin-top: 3%; margin-left: 3%;">
+                    <label style="white-space: nowrap;">Custom Class</label>
+                </div>
+                    <label><span>*</span> Mapping Dataraptor Bundle Name</label>
+                    <input type="text" placeholder="DRTranformQuote">
+                    <label><span>*</span> Data Extract Dataraptor Bundle Name</label>
+                    <input type="text" placeholder="DRExtract Quote">
+             </form>
+           </div>
+          <div class="right">
+            <h2 style="font-size: 36px; font-weight: normal;">Attach File</h2>
+            <div class="upload center">
+                <h2 style="margin-top: 1%;">Upload File Here</h2>
+                <svg style="margin: 0;" class="svg3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17 17H17.01M15.6 14H18C18.9319 14 19.3978 14 19.7654 14.1522C20.2554 14.3552 20.6448 14.7446 20.8478 15.2346C21 15.6022 21 16.0681 21 17C21 17.9319 21 18.3978 20.8478 18.7654C20.6448 19.2554 20.2554 19.6448 19.7654 19.8478C19.3978 20 18.9319 20 18 20H6C5.06812 20 4.60218 20 4.23463 19.8478C3.74458 19.6448 3.35523 19.2554 3.15224 18.7654C3 18.3978 3 17.9319 3 17C3 16.0681 3 15.6022 3.15224 15.2346C3.35523 14.7446 3.74458 14.3552 4.23463 14.1522C4.60218 14 5.06812 14 6 14H8.4M12 15V4M12 4L15 7M12 4L9 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
+          </div>
+       </div>
+    </div>
+</body>
+</html>
